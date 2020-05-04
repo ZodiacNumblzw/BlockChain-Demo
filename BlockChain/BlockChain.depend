@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1588597552 source:c:\users\liuziwen\desktop\blockchain\main.cpp
+	"Chain.h"
+
+1588597444 c:\users\liuziwen\desktop\blockchain\chain.h
+	"Block.h"
+	<unordered_map>
+
+1588596835 c:\users\liuziwen\desktop\blockchain\hashtable.h
+	<string>
+	<cassert>
+
+1588597350 c:\users\liuziwen\desktop\blockchain\block.h
+	"HashTable.h"
+	<iostream>
+
