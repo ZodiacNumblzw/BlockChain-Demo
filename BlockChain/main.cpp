@@ -4,14 +4,14 @@ int main()
 {
     Chain myBlockChain;
     std::string myidol="luotuo",num="0";
-    //¼ìÑéÇø¿éÁ´µÄÌí¼Ó£¬²éÑ¯¹¦ÄÜ
+    //æ£€éªŒåŒºå—é“¾çš„æ·»åŠ ï¼ŒæŸ¥è¯¢åŠŸèƒ½
     for(int i=0;i<9;i++)
     {
         num[0]=(i+'0');
         myBlockChain.addBlock(myidol+num);
         std::cout<<*myBlockChain.getBlock(i)<<std::endl;
     }
-
+    //ä¿®æ”¹ç¬¬7ä¸ªBlockçš„data
     myBlockChain.getBlock(7)->data=myidol+"10";
     myBlockChain.check();
     /*for(int i=0;i<9;i++)
@@ -19,7 +19,7 @@ int main()
         std::cout<<*myBlockChain.getBlock(i)<<std::endl;
     }*/
 
-
+    //ä¿®æ”¹ç¬¬7ä¸ªBlockçš„hashValue
     Block* temp=myBlockChain.getBlock(7);
     temp->hashValue=temp->hashmydata();
     myBlockChain.check();
